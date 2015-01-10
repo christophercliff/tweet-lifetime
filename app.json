@@ -1,0 +1,41 @@
+{
+  "name": "tweet-lifetime",
+  "description": "A self-hosted service that continuously monitors your Twitter account and deletes old tweets.",
+  "website": "https://christophercliff.com/tweet-lifetime",
+  "keywords": [
+    "twitter",
+    "tweet",
+    "lifetime",
+    "expire",
+    "delete",
+    "reset"
+  ],
+  "repository": "https://github.com/christophercliff/tweet-lifetime",
+  "success_url": "/",
+  "env": {
+    "APP_NAME": {
+      "description": "The name of the Heroku application.",
+      "value": "<your_app_name>"
+    },
+    "IGNORE_HASHTAG": {
+      "description": "Tweets containing this hashtag will not be removed.",
+      "value": "pin"
+    },
+    "MAX_AGE_UNIT": {
+      "description": "The unit to measure the maximum age of a tweet. Must be either \"years\", \"months\", \"weeks\", \"days\", \"hours\", \"minutes\" or \"seconds\". Pairs with MAX_AGE_VALUE to describe a duration like \"7 days\".",
+      "value": "days"
+    },
+    "MAX_AGE_VALUE": {
+      "description": "The value to measure the maximum age of a tweet. Pairs with MAX_AGE_UNIT to describe a duration like \"7 days\".",
+      "value": "7"
+    },
+    "SENTRY_DSN": {
+      "description": "Log application errors to a Sentry instance (optional).",
+      "required": false
+    },
+    "TWITTER_ACCESS_TOKEN_KEY": "<your_access_token_key>",
+    "TWITTER_ACCESS_TOKEN_SECRET": "<your_access_token_secret>",
+    "TWITTER_CONSUMER_KEY": "<your_consumer_key>",
+    "TWITTER_CONSUMER_SECRET": "<your_consumer_secret>"
+  }
+}

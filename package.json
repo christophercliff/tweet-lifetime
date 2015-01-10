@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "tweet-lifetime",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node ./",
+    "style": "./node_modules/.bin/crispy ./lib/ ./test/",
+    "test": "npm run style && ./node_modules/.bin/mocha --reporter spec -r should --grep ''"
+  },
+  "main": "./lib/start",
+  "dependencies": {
+    "bluebird": "^2.5.3",
+    "boom": "^2.6.1",
+    "dotenv": "^0.4.0",
+    "hapi": "^8.1.0",
+    "is-integer": "^1.0.3",
+    "lodash": "^2.4.1",
+    "moment": "^2.8.4",
+    "once": "^1.3.1",
+    "raven": "^0.7.2",
+    "twitter": "^1.0.1",
+    "wreck": "^5.1.0"
+  },
+  "devDependencies": {
+    "crispy": "^3.1.1",
+    "mocha": "^2.1.0",
+    "should": "^4.4.2"
+  }
+}
