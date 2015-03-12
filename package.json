@@ -13,20 +13,20 @@
   },
   "dependencies": {
     "async": "^0.9.0",
-    "bluebird": "^2.5.3",
+    "bluebird": "^2.9.14",
     "boom": "^2.6.1",
-    "dotenv": "^0.4.0",
-    "hapi": "^8.1.0",
+    "dotenv": "^0.5.1",
+    "hapi": "^8.3.1",
     "hapi-nudge": "^1.1.1",
-    "is-integer": "^1.0.3",
-    "lodash": "^2.4.1",
-    "moment": "^2.8.4",
+    "is-integer": "^1.0.4",
+    "lodash": "^3.5.0",
+    "moment": "^2.9.0",
     "sentry-client": "^1.0.1",
-    "twitter": "^1.0.1"
+    "twitter": "^1.2.3"
   },
   "devDependencies": {
-    "crispy": "^3.1.1",
-    "mocha": "^2.1.0",
-    "should": "^4.4.2"
+    "crispy": "^3.1.2",
+    "mocha": "^2.2.1",
+    "should": "^5.2.0"
   }
 }
