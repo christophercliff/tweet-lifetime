@@ -69,7 +69,7 @@ describe('runner.start()', function () {
                 return client.get({ user_id: userId })
             })
             .then(function (_statuses) {
-                _.chain(statuses).pluck('id_str').sort().rest(0).value()
+                _.chain(statuses).pluck('id_str').sort().value()
                     .should.eql(_.chain(_statuses).pluck('id_str').sort().value())
             })
             .delay(delay)
